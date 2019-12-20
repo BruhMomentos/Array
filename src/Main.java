@@ -18,7 +18,7 @@ public class Main {
         System.out.println(store);
 
         //This shows what value was assigned to each index
-        System.out.println("number\t" + "occurence ");
+        System.out.println("number\t" + "value ");
 
         for (int num = 0; num < counts.length; num++) {
 
@@ -37,44 +37,40 @@ public class Main {
         int sum = 0;
 
         for (int e : ints) sum += e;
-        System.out.println("The average of all the arrays is " + sum / 100);
+        System.out.println("The average of all the numbers for the 2nd question is " + sum / 100);
 
         //Take the last array you made and swap 2 different index
         //positions
 
-        //New Index 40
         System.out.println("\n");
-        System.out.println("Same array with a index of 40");
-        int[] ints2 = new int[40];
+        int originalPosition = 0;
+        int newPosition = 0;
+
+        System.out.println("\n");
+        int[] ints2 = new int[100];
         for (int i = 0; i < ints2.length; i++) {
             ints2[i] = (int) (Math.random() * 100) + 1;
         }
         int sum2 = 0;
 
         for (int e : ints2) sum2 += e;
-        System.out.println("The average of all the arrays is " + sum2 / 100);
+        System.out.println("The average of all the numbers for the third question is " + sum2 / 100);
+        System.out.println("\t");
 
-        //New index 85
-        System.out.println("\n");
-        System.out.println("Same array with a index of 85");
-        int[] ints3 = new int[85];
-        for (int i = 0; i < ints3.length; i++) {
-            ints3[i] = (int) (Math.random() * 100) + 1;
-        }
-        int sum3 = 0;
+        System.out.println("All of the swap index positions were");
+        int temp = ints2[originalPosition];
+        ints2[originalPosition] = ints2[newPosition];
+        ints2[newPosition] = temp;
+        System.out.println(Arrays.toString(ints2));
 
-        for (int e : ints3) sum3 += e;
-        System.out.println("The average of all the arrays is " + sum3 / 100);
 
         //Take the last array you made and completely reverse the
         //order of the array
-        System.out.println("\n");
-        int[] ints4 = {85};
 
 
     }
-}
 
+}
 
 
 
