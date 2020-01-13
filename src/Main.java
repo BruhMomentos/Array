@@ -1,4 +1,4 @@
-import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
 //Create an array that holds 20 positions, give each index a
@@ -88,16 +88,19 @@ public class Main {
         for (int i = 0; i < ints3.length; i++) {
 
         }
-        //Work here
 
+        System.out.println("Original array: ");
+        for (int i = 0; i < ints3.length; i++) {
+            System.out.print(ints3[i] + " ");
+        }
 
+        System.out.println();
 
-
-
-
-
-
-
+        System.out.println("Array in reverse order: ");
+        //Loop through the array in reverse order
+        for (int i = ints3.length-1; i >= 0; i--) {
+            System.out.print(ints3[i] + " ");
+        }
 
         for (int i = 0; i < ints3.length; i++) {
             ints3[i] = (int) (Math.random() * 100) + 1;
@@ -108,12 +111,15 @@ public class Main {
 
         for (int e : ints3) sum3 += e;
         System.out.println("\t");
-        System.out.println("The average of all the numbers for the third question is " + sum3 / 10);
+        System.out.println("The average of all the numbers for the Fourth question is " + sum3 / 10);
         System.out.println("\t");
 
 
+
+
+        }
     }
-}
+
 
 
 
